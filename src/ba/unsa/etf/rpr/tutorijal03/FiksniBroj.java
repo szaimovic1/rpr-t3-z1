@@ -1,4 +1,4 @@
-package ba.unsa.etf.rpr.tutorijal03;
+package ba.unsa.etf.rpr.tutorijal03;                                                                          //paket???
 
 enum Grad{
     TRAVNIK, ORASJE, ZENICA, SARAJEVO, LIVNO, TUZLA, MOSTAR,                //mogu li enumu dodijeliti dr. vrijednosti???
@@ -18,8 +18,8 @@ public class FiksniBroj extends TelefonskiBroj {
     public String toString(){
         String s;
         if(grad!=Grad.BRCKO)
-            s = '03' + grad.ordinal() + '/' + broj;
-        else s = '049/' + broj;
+            s = "03" + grad.ordinal() + "/" + broj;
+        else s = "049/" + broj;
         return s;
     }
 

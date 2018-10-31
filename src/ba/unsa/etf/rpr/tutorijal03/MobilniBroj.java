@@ -9,5 +9,14 @@ public class  MobilniBroj extends TelefonskiBroj {
         this.broj = broj;
     }
 
+    @Override
+    public String toString(){
+        String s = "0" + MobilnaMreza + "/" + broj;
+        return s;
+    }
 
+    @Override
+    public String ispisi() {
+        System.out.println(this);
+    }
 }
