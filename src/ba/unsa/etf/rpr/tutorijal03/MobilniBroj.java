@@ -4,19 +4,19 @@ public class  MobilniBroj extends TelefonskiBroj {
     private int MobilnaMreza;
     private String broj;
 
-    public MobilniBroj(int mobilnaMreza, String broj) {
+    MobilniBroj(int mobilnaMreza, String broj) {
         MobilnaMreza = mobilnaMreza;
         this.broj = broj;
     }
 
-    @Override
+ /*   @Override
     public String toString(){
-        String s = "0" + MobilnaMreza + "/" + broj;
+        String s = "0" + MobilnaMreza + "/" + broj;                                //ovo ne treba?
         return s;
-    }
+    }*/
 
     @Override
     public String ispisi() {
-        System.out.println(this);
+        return "0" + MobilnaMreza + "/" + broj;                                    //moze li ikako return this?
     }
 }
