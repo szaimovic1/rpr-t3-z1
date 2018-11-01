@@ -18,7 +18,7 @@ public class FiksniBroj extends TelefonskiBroj {
         }
 
         //@Override
-        public boolean equals(Grad g){
+        public boolean equals(Grad g) {
             return (this.pozivni.equals(g.pozivni));
         }
     }
@@ -32,16 +32,20 @@ public class FiksniBroj extends TelefonskiBroj {
 
     @Override
     public String ispisi() {
-        return (grad.pozivni + "/" + broj);
+        return (grad.pozivni + "/" + broj);                                                //moze i sa ordinal()
     }
 
-    @Override                                                                     //ova moze override..
+    @Override
     public int hashCode() {
         return broj.hashCode();
     }
 
-    //@Override                                                                   //ova jok i ona iz enuma..
+    //@Override
     public boolean equals(FiksniBroj br){
         return (grad.equals(br.grad) && broj.equals(br.broj));
+    }
+
+    public Grad getGrad() {
+        return grad;
     }
 }
