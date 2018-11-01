@@ -35,7 +35,7 @@ public class FiksniBroj extends TelefonskiBroj {
         return (grad.pozivni + "/" + broj);                                                //moze i sa ordinal()
     }
 
-    @Override
+    //@Override
     public int hashCode() {
         return broj.hashCode();
     }
@@ -43,9 +43,5 @@ public class FiksniBroj extends TelefonskiBroj {
     //@Override
     public boolean equals(FiksniBroj br){
         return (grad.equals(br.grad) && broj.equals(br.broj));
-    }
-
-    public Grad getGrad() {
-        return grad;
     }
 }
