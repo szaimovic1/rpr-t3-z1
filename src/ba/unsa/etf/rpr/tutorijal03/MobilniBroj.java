@@ -19,4 +19,9 @@ public class  MobilniBroj extends TelefonskiBroj {
     public String ispisi() {
         return "0" + MobilnaMreza + "/" + broj;                                    //moze li ikako return this?
     }
+
+    //@Override
+    public boolean equals(MobilniBroj br){
+        return (MobilnaMreza==br.MobilnaMreza && broj.equals(br.broj));
+    }
 }
